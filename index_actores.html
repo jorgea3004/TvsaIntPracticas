@@ -1,0 +1,39 @@
+<?php include_once('../televisainternacional/public/extras/funciones.php'); ?>
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta description="Mi sitio" />
+        <title>Actores</title>
+        <link rel="stylesheet" type="text/css" media="all" href="css/estilos.css" /> 
+        <style type="text/css">
+        	ul {display:inline;float: left;height: auto;margin: 0;padding: 0;width: auto;}
+        	ul li {display:inline;float: left;height: auto;list-style: none; margin: 0;padding: 0;width: auto;}
+        </style>
+    </head>
+	<body>
+		<header>
+		</header>
+		<section>
+			<article>
+				<ul>
+					<?php
+					$sqlr = "SELECT c.id as idactor, c.name as actor, t.image as foto, t.id_product as prod FROM cat_actors c left join (SELECT image, id_cat_actors, id_product FROM cast c order by id_product desc ) t on t.id_cat_actors=c.id where length(name)>2 and name like 'A%' group by idactor order by name asc, idactor asc,t.id_product desc;";
+					Conectar();
+					$resultadosr = mysql_query($sqlr);
+					$cuantosr = mysql_num_rows($resultadosr);
+					$resultador = 0;
+					while($datar = mysql_fetch_array($resultadosr))
+					{
+						echo "<li>" . $datar['foto'] . "</li>";
+					}
+					mysql_free_result($resultadosr);
+					?>
+					
+				</ul>
+			</article>
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>

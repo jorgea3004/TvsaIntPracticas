@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+	<title>Test de blur</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="contenido">
+			<div class="content">
+				<figure id="container_0" class="container"> <img src="img.jpg"> </figure>
+				<article>
+					<p>Original</p>
+				</article>
+			</div>
+			<div class="content">
+				<figure id="container_1" class="container"> <img src="img.jpg"> </figure>
+				<article>
+					<p>Efecto Blur a 10%</p>
+				</article>
+			</div>
+			<div class="content">
+				<figure id="container_2" class="container"> <img src="img.jpg"> </figure>
+				<article>
+					<p>Efecto Blur a 20%</p>
+				</article>
+			</div>
+			<div class="content">
+				<figure id="container_3" class="container"> <img src="img.jpg"> </figure>
+				<article>
+					<p>Efecto Blur a 30%</p>
+				</article>
+			</div>
+			<div class="content">
+				<figure id="container_4" class="container"> <img src="img.jpg"> </figure>
+				<article>
+					<p>Efecto Blur a 40%</p>
+				</article>
+			</div>
+			<div class="content">
+				<figure id="container_5" class="container"> <img src="img.jpg"> </figure>
+				<article>
+					<p>Efecto Blur a 50%</p>
+				</article>
+			</div>
+			<div class="content">
+				<figure id="container_6" class="container"> <img src="img.jpg"> </figure>
+				<article>
+					<p>Efecto Blur a 60%</p>
+				</article>
+			</div>
+			<div class="content">
+				<figure id="container_7" class="container"> <img src="img.jpg"> </figure>
+				<article>
+					<p>Efecto Blur a 70%</p>
+				</article>
+			</div>
+			<div class="content">
+				<figure id="container_8" class="container"> <img src="img.jpg"> </figure>
+				<article>
+					<p>Efecto Blur a 80%</p>
+				</article>
+			</div>
+			<div class="content">
+				<figure id="container_9" class="container"> <img src="img.jpg"> </figure>
+				<article>
+					<p>Efecto Blur a 90%</p>
+				</article>
+			</div>
+			<div class="content">
+				<figure id="container_10" class="container"> <img src="img.jpg"> </figure>
+				<article>
+					<p>Efecto Blur a 100%</p>
+				</article>
+			</div>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="Vague.js"></script>
+	<script>
+		var vague = $("#container_1").Vague({intensity:10});
+		vague.blur();
+		var vague = $("#container_2").Vague({intensity:20});
+		vague.blur();
+		var vague = $("#container_3").Vague({intensity:30});
+		vague.blur();
+		var vague = $("#container_4").Vague({intensity:40});
+		vague.blur();
+		var vague = $("#container_5").Vague({intensity:50});
+		vague.blur();
+		var vague = $("#container_6").Vague({intensity:60});
+		vague.blur();
+		var vague = $("#container_7").Vague({intensity:70});
+		vague.blur();
+		var vague = $("#container_8").Vague({intensity:80});
+		vague.blur();
+		var vague = $("#container_9").Vague({intensity:90});
+		vague.blur();
+		var vague = $("#container_10").Vague({intensity:100});
+		vague.blur();
+	</script>
+</body>
+</html>

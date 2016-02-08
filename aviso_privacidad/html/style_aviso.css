@@ -1,0 +1,102 @@
+@charset "ISO-8859-1";
+img {
+    border: 0 none;
+}
+html {
+    background-color: #FF9933;
+    height: 100%;
+    margin: 0; padding: 0;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+body {display: inline;float: left;position: relative; height: 100%; width: 100%;margin: 0; padding: 0;}
+body div { background: transparent url(generales/img-bg.jpg) center top no-repeat; display: inline;float: left;position: relative; height: 600px; width: 1000px;
+	margin: -300px 0 0 -500px; padding: 0;
+	left:50%; top:50%;
+}
+body div * {background: none; display: inline;float: left; position: relative; height: auto; width: auto;}
+body div section form#pass hr { height: 450px; color: #943c16; box-shadow: 1px 0 0 #ffb50e; margin: 27px 10px 0 0; width: 1px; }
+body div button { background: #ffb505 url(generales/img-flecha.jpg) center center no-repeat; background-position: center right; cursor: pointer;font-weight: bold; padding: 4px 10px 4px 4px; color: #fff; font-size: 11px; margin: 8px 10px;border: 0; margin: 8px; float: right; }
+body div section {background: #e06a2e; display: inline;float: left;position: relative; height: auto; width: 660px;
+	margin: 40px 0 0 150px; padding: 0;
+	}
+body div section article {height: 100%; width: 50%;}
+body div section article#left { width: 316px;}
+body div section article#left section#optn {margin: 100px 0 0 62px; width: auto; padding: 0; height: auto;left:0; top:0;}
+body div section article#left section#optn div.checklist {margin:7px 0 0 0; width: 100%;left:0; top:0;}
+body div section article#left section#optn div.checklist div.chck {background: #FFF; cursor: pointer; border: solid 1px #e5e5e5; margin: 0; width: 16px;height: 16px;left:0; top:0;}
+body div section article#left section#optn div.checklist div.chck.clck {background: #fff url(generales/img-check.png) center center no-repeat;}
+body div section article#left section#optn div.checklist label { color: #fff; font-size: 12px; margin-left: 8px; width: 170px;}
+body div section article#left section#txtaviso { color: #fff; font-size: 11px; margin: 141px 17px 0 17px; width: 282px; height: auto;}
+body div section article#left section#txtaviso a { display: inline;float: left;position: absolute; margin: 0 3px; }
+body div section article#left a { display: inline;float: left;position: relative; margin: 0 3px; }
+
+body div section article#right { font-size: 11px; width: 325px; background: url(generales/img-registro.jpg) left top 70px no-repeat;}
+body div section article#right label.clswnd { color: #ffb50e; cursor: pointer; margin: 5px; padding: 2px 0; width: 54px; float: right; }
+body div section article#right label.clswnd img { margin: 3px; padding: 0; float: right; }
+body div section article#right label { float: left; margin: 3px 0 3px 30px; width: 290px; }
+body div section article#right ul { margin: 3px; padding: 0; width: 100%; }
+body div section article#right ul li { float: right; margin: 3px 0px; padding: 0; width: auto; }
+body div section article#right ul li div { margin: 0px; padding: 0px 4px; text-align: right; min-width: 18px; left:0;top:0; width: auto;}
+body div section article#right ul li div.dreq {text-align: center; width: 18px;}
+body div section article#right ul li div input, body div section article#right ul li div select { background: #fff; border: 0; margin: 0px;
+ height: 18px; width: 167px; }
+ body div section article#right ul li div input.error {
+ 	border: solid 1px red;
+ 	background: #f9b1b1;
+ }
+body div section article#right ul li div input[type=radio] {
+	background: #ebc0a9;
+ height: 18px; margin: 0 7px 0 0; width: auto; }
+body div section article#right ul li div label {
+	color: #fff; float: left; margin: 0 40px 0 0px; width: auto;
+}
+body div section article#right ul li div select { 
+      -webkit-appearance: none;        /*Removes default chrome and safari style*/
+      -moz-appearance: none;          /* Removes Default Firefox style*/
+      background: #ebc0a9 url('generales/img-drop.jpg') no-repeat;         /*Adds background-image*/
+      background-position: 155px 0px;                /*Position of the background-image*/
+text-indent: 0.01px;
+ text-overflow: "";
+ height: 21px;
+ width: 176px;
+}
+body div section article#right ul li div select option { 
+	background: #f26922;
+	display: block;
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0px 0px;
+	padding: 5px 4px;
+	width: 100%;
+}
+body div section article#right ul li div select option:hover {
+	background-color: #ebc0a9; 
+        box-shadow: 0 0 10px 100px #ebc0a9 inset;
+   }
+body div section article#right ul li div input:focus {
+	-webkit-box-shadow:inset 0px 0px 0px 1px #e5e5e5;
+    -moz-box-shadow:inset 0px 0px 0px 1px #e5e5e5;
+    box-shadow:inset 0px 0px 0px 1px #e5e5e5;
+    }
+div#bgpopup {
+	background: transparent url(generales/bgpop.png) center top repeat;
+	display: none;
+	float: left;
+	height: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9;
+}
+div#bgpopup section {background: #e06a2e; display: inline;float: left;position: relative; min-height: 83px; height: auto; width: 175px;
+	margin: -42px 0 0 -86px; padding: 11px;top:50%; left: 50%;border-radius: 5px; border: solid 3px #7a3a17; text-align: center;
+-webkit-text-stroke: 1px #d46428;
+-webkit-text-fill-color: #FFFFFF;
+}
+div#bgpopup section p {color: #fff;font-size: 13px; font-size: normal; text-align: center; margin: 0 0 0 27px;
+padding: 0; height: auto; width: 120px;}

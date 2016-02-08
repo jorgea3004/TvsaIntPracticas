@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>Color Picker</title>
+	<link rel="stylesheet" media="screen" type="text/css" href="colorpicker.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="colorpicker.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		//$('.colorpik').ColorPicker();
+		$('.colorpik').ColorPicker({
+			onSubmit: function(hsb, hex, rgb, el) {
+				$(el).val(hex);
+				$(el).ColorPickerHide();
+			},
+			onBeforeShow: function () {
+				$(this).ColorPickerSetColor(this.value);
+			},
+			onChange: function(hex){
+				$('.colorpik').val(this.value);
+			}
+		})
+		.bind('keyup', function(){
+			$(this).ColorPickerSetColor(this.value);
+		});
+	});
+	</script>
+</head>
+<body>
+<input type="text" class="colorpik" value="" id="colorpik" name="colorpik">
+</body>
+</html>

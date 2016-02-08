@@ -1,0 +1,29 @@
+* {margin: 0;padding: 0;}
+body {background: #FFF0FF; display:inline;float: left;height: auto;position: relative; width:100%;}
+body * { border: 0; display:inline;float: left;height: auto;position: relative; width:auto;}
+body header, body footer {height: auto;width: 100%;}
+body header {background: #133563; min-height: 20px; box-shadow: 0px 5px 5px #000; color: #FFF0FF; }
+body header ul {left: 0;width: 100%;}
+body header ul li { display:inline;float: left; list-style: none; margin: 5px 0px;position: relative; text-align: center; width: 20%;}
+body header ul li a {color: #FFF0FF; font-size: 16px;font-weight: bold; text-decoration: none; margin: 0; width: 100%;}
+body header ul li ul.submenu {background: #133563;display:none; left: 0; position: absolute; top: 20px; width: 100%; z-index: 9;}
+body header ul li ul.submenu li { display:inline;float: left; list-style: none; margin: 0px;position: relative; text-align: left; width: 100%;}
+body header ul li ul.submenu li a {color: #FFF0FF; font-size: 16px;font-weight: bold; text-decoration: none; margin: 5px; width: 100%;}
+body header ul li.productos:hover ul {display: block;}
+body header ul li.productos:hover ul li {}
+body header ul li.productos:hover ul li:hover {background: #FFF0FF;}
+body header ul li.productos:hover ul li:hover a {color: #133563;}
+body div {margin:10px 0 10px 0px; width:100%;}
+body div section {border: solid 1px #000; left: 50%; margin-left:-475px; text-align: justify; width:950px;}
+body div section img {border:0; height: 500px; width:950px;}
+body div section h1 {height: auto; margin: 10px 0px; width:100%;}
+body div section p {display: inherit; float: none; margin: 5px; width: auto;}
+body div section aside {  display:inline; height:auto;float:right; !important;margin: 5px !important; overflow: visible !important; padding:0; width:auto;}
+body div section aside img {height: 250px; width: 300px;}
+
+body footer {background: #133563; min-height: 20px; }
+body footer label {color: #FFF0FF; font-size: 15px; margin: 10px; }
+@media screen and (max-width:950px){
+        body div section {left: 0; margin: 0; height: auto; width: auto;}
+        body div section img {margin: 0; height: auto; width: 100%;}
+}

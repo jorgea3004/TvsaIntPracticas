@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="ISO-9958-1" />
+        <meta description="Mi sitio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>Carrusel</title>
+        <script type="text/javascript" src="../librarys/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="../librarys/jquery.jcarousel.min.js"></script>
+        <style type="text/css">
+        body {
+            background: #F0EFE7;
+            margin: 0;
+            padding: 0;
+            font:'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #4E443C;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+          font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          text-align: center;
+          font-weight: normal;
+          text-rendering: optimizelegibility;
+        }
+
+        h1 {
+            color: #4E443C;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        h2, h2 a {
+            color: #F14E32;
+        }
+
+        h3, h3 a {
+          color: #0388A6;
+        }
+
+        a {
+          color: #0388A6;
+        }
+
+        pre {
+          border:1px solid #000;
+          overflow-x:auto;
+          background: #222;
+          color: #fff;
+          text-shadow: none;
+        }
+
+        .wrapper {
+            max-width: 1000px;
+            padding: 0;
+            margin: auto;
+        }
+.jcarousel-wrapper {
+    margin: 0px auto;
+    position: relative;
+    border: 0px solid #fff;
+}
+
+
+.jcarousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.jcarousel-wrapper .photo-credits a {
+    color: #fff;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 45%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+       -moz-box-shadow: 0 0 2px #999;
+            box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-control-prev {
+    left: 0px;
+}
+
+.jcarousel-control-next {
+    right: 0px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;
+    
+    background: #fff;
+    color: #4E443C;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;
+    
+    margin-right: 2px;
+    
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+iframe {
+    height: 300px;
+    width: 100%;
+}
+        </style>
+    </head>
+	<body>
+       <div class="wrapper">
+           <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="../televisainternacional_2014/imgs/carr01.jpg" alt=""></li>
+                        <li><img src="../televisainternacional_2014/imgs/carr02.jpg" alt=""></li>
+                        <li><img src="../televisainternacional_2014/imgs/carr03.jpg" alt=""></li>
+                        <li><img src="../televisainternacional_2014/imgs/carr04.jpg" alt=""></li>
+                        <li><img src="../televisainternacional_2014/imgs/carr05.jpg" alt=""></li>
+                    </ul>
+                </div>
+                    <p class="photo-credits">
+                        Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+                    </p>
+
+                    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                    <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                    
+                    <p class="jcarousel-pagination">
+                        
+                    </p>
+     		</div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.0923943709636!2d-99.13202419999996!3d19.4084135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fee84a7475d5%3A0x77b4fcd33d64e37!2sEje+3+Sur+Calz.+Chabacano+69%2C+Ampl+Asturias%2C+06890+Ciudad+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1ses-419!2smx!4v1415747544047" frameborder="0" style="border:0"></iframe>
+	</body>
+    <script type="text/javascript">
+    (function($) {
+        $(function() {
+            //$('.jcarousel').jcarousel();
+            var jcarousel = $('.jcarousel');
+
+            jcarousel
+                .on('jcarousel:reload jcarousel:create', function () {
+                    var width = jcarousel.innerWidth();
+
+                    /*if (width >= 600) {
+                        width = width / 3;
+                    } else if (width >= 350) {
+                        width = width / 2;
+                    }*/
+
+                    jcarousel.jcarousel('items').css('width', width + 'px');
+                    jcarousel.jcarousel('items').find('img').css('width', width + 'px');
+                })
+                .jcarousel({
+                    wrap: 'circular'
+                });
+
+            $('.jcarousel-control-prev')
+                .on('jcarouselcontrol:active', function() {
+                    $(this).removeClass('inactive');
+                })
+                .on('jcarouselcontrol:inactive', function() {
+                    $(this).addClass('inactive');
+                })
+                .jcarouselControl({
+                    target: '-=1'
+                });
+
+            $('.jcarousel-control-next')
+                .on('jcarouselcontrol:active', function() {
+                    $(this).removeClass('inactive');
+                })
+                .on('jcarouselcontrol:inactive', function() {
+                    $(this).addClass('inactive');
+                })
+                .jcarouselControl({
+                    target: '+=1'
+                });
+
+            $('.jcarousel-pagination')
+                .on('jcarouselpagination:active', 'a', function() {
+                    $(this).addClass('active');
+                })
+                .on('jcarouselpagination:inactive', 'a', function() {
+                    $(this).removeClass('active');
+                })
+                .jcarouselPagination();
+        });
+    })(jQuery);
+</script>
+</html>
